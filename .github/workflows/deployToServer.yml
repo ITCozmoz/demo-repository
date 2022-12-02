@@ -1,24 +1,22 @@
-name: Publish Website to Server
-
+name: 🚀 Deploy website
 
 on:
   push:
     branches:
       - master
   workflow_dispatch:    
-      
+  
 jobs:
-  FTP-Deploy-Action:
-    name: FTP-Deploy-Action
+  web-deploy:
+    name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v2
-
+    
     - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      uses: SamKirkland/FTP-Deploy-Action@4.3.2
       with:
-         server: ${{ secrets.FTP_SERVER }}
-         username: ${{ secrets.FTP_USERNAME }}
-         password: ${{ secrets.ftp_password }}
-         protocol: ftps
+        server: ftp.itcozmoz.com
+        username: CI-ftp@itcozmoz.com
+        password: ${{ secrets.ftp_password }}
