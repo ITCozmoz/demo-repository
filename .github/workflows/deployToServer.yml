@@ -17,3 +17,4 @@ jobs:
         server: 199.188.200.89
         username: CI-ftp@itcozmoz.com
         password: (z,*w?(xTo4w
+        path: ./demo-project
