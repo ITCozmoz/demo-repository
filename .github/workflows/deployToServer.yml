@@ -14,6 +14,6 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.2
       with:
-        server: ftp.itcozmoz.com
+        server: 199.188.200.89
         username: CI-ftp@itcozmoz.com
         password: (z,*w?(xTo4w
