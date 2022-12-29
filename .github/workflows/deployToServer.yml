@@ -16,5 +16,5 @@ jobs:
       with:
         server: 199.188.200.89
         username: CI-ftp@itcozmoz.com
-        password: (z,*w?(xTo4w
+        password: 
         server-dir: /public_html/frontend/
